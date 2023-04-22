@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+  
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        <img src="./assets/images/logo.svg" width="148" height="38" alt="Fasteat home">
+      </a>
+
+      <nav class="navbar" data-navbar>
+        <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+          <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+        </button>
+
+        <a href="#" class="logo">
+          <img src="./assets/images/logo.svg" width="148" height="38" alt="Fasteat home">
+        </a>
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="index.html" class="navbar-link" data-nav-link>Home</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#" class="navbar-link" data-nav-link>About Us</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#" class="navbar-link" data-nav-link>Restaurants</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#" class="navbar-link" data-nav-link>Contacts</a>
+          </li>
+
+        </ul>
+      </nav>
+
+      <div class="header-action">
+        <button class="cart-btn" aria-label="cart">
+          <ion-icon name="bag" aria-hidden="true"></ion-icon>
+        </button>
+
+        <a href="./restaurents.html" class="btn btn-primary has-after">Order Now</a>
+      </div>
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+      </button>
+
+      <div class="overlay" data-overlay data-nav-toggler></div>
+
+    </div>
+  </header>
+  <main>
+    <article>
+      <div>
+
+     
+    <section class="section top-restaurant" aria-labelledby="top-restaurent-label">
+        <div class="container">
+
+          <ul class="grid-list">
+<!-- 
+            <li data-reveal="left">
+              <h2 class="h2 section-title" id="top-restaurent-label">
+                12 Best Restaurants in Your City
+              </h2>
+
+              <p class="section-text">
+                "Explore the top 12 restaurants in town, handpicked by our food experts."
+              </p>
+            </li> -->
+
+            <li data-reveal="right">
+              <div class="restaurant-card">
+
+                <div class="card-icon">
+                  <img src="./assets/images/starbucks.png" width="100" height="100" loading="lazy"
+                    alt="Starbucks" class="w-100">
+                </div>
+
+                <h3 class="h5 card-title">Starbucks</h3>
+
+                <div class="rating-wrapper">
+                  <ion-icon name="star" aria-hidden="true"></ion-icon>
+                  <ion-icon name="star" aria-hidden="true"></ion-icon>
+                  <ion-icon name="star" aria-hidden="true"></ion-icon>
+                  <ion-icon name="star" aria-hidden="true"></ion-icon>
+                  <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                </div>
+
+                <div class="card-meta-wrapper">
+                  <a href="#" class="card-meta">Coffee</a>
+                  <a href="#" class="card-meta">Snacks</a>
+                </div>
+
+                <p class="card-text">
+                  To inspire and nurture the human spirit – one person, one cup, and one neighborhood at a time
+
+                </p>
+
+              </div>
+            </li>
+
+            <li data-reveal="left">
+              <div class="restaurant-card">
+
+                <div class="card-icon">
+                  <img src="./assets/images/mc.png" width="100" height="100" loading="lazy" alt="The Wilmington"
+                    class="w-100">
+                </div>
+
+                <h3 class="h5 card-title">McDonald's</h3>
+
+                <div class="rating-wrapper">
+                  <ion-icon name="star" aria-hidden="true"></ion-icon>
+                  <ion-icon name="star" aria-hidden="true"></ion-icon>
+                  <ion-icon name="star" aria-hidden="true"></ion-icon>
+                  <ion-icon name="star" aria-hidden="true"></ion-icon>
+                  <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                </div>
+
+                <div class="card-meta-wrapper">
+                  <a href="#" class="card-meta">Burgers</a>
+                  <a href="#" class="card-meta">Fries</a>
+                </div>
+
+                <p class="card-text">
+                  Get your McDonald's favorites delivered right to your door. Order now for a quick and tasty meal!
+                </p>
+
+              </div>
+            </li>
+
+            <li data-reveal="right">
+              <div class="restaurant-card">
+
+                <div class="card-icon">
+                  <img src="./assets/images/dominos.png" width="100" height="100" loading="lazy" alt="Kings Arms"
+                    class="w-100">
+                </div>
+
+                <h3 class="h5 card-title">Domino's Pizza</h3>
+
+                <div class="rating-wrapper">
+                  <ion-icon name="star" aria-hidden="true"></ion-icon>
+                  <ion-icon name="star" aria-hidden="true"></ion-icon>
+                  <ion-icon name="star" aria-hidden="true"></ion-icon>
+                  <ion-icon name="star" aria-hidden="true"></ion-icon>
+                  <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                </div>
+
+                <div class="card-meta-wrapper">
+                  <a href="#" class="card-meta">Pizza</a>
+                  <a href="#" class="card-meta">Drinks</a>
+                </div>
+
+                <p class="card-text">
+                  Hot, cheesy, and delicious - get your favorite Domino's pizza delivered right to your doorstep. Order now and indulge in the perfect comfort food!
+                </p>
+
+              </div>
+            </li>
+            <li data-reveal="right">
+              <div class="restaurant-card">
+
+                <div class="card-icon">
+                  <img src="./assets/images/dominos.png" width="100" height="100" loading="lazy" alt="Kings Arms"
+                    class="w-100">
+                </div>
+
+                <h3 class="h5 card-title">Domino's Pizza</h3>
+
+                <div class="rating-wrapper">
+                  <ion-icon name="star" aria-hidden="true"></ion-icon>
+                  <ion-icon name="star" aria-hidden="true"></ion-icon>
+                  <ion-icon name="star" aria-hidden="true"></ion-icon>
+                  <ion-icon name="star" aria-hidden="true"></ion-icon>
+                  <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                </div>
+
+                <div class="card-meta-wrapper">
+                  <a href="#" class="card-meta">Pizza</a>
+                  <a href="#" class="card-meta">Drinks</a>
+                </div>
+
+                <p class="card-text">
+                  Hot, cheesy, and delicious - get your favorite Domino's pizza delivered right to your doorstep. Order now and indulge in the perfect comfort food!
+                </p>
+
+              </div>
+            </li>
+
+          </ul>
+
+          <a href="#" class="btn btn-secondary has-after">
+            <span class="span">See All</span>
+
+            <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+          </a>
+
+        </div>
+      </section>
+    </div>
+      </article>
+      </main>
+    
+    <script src="./assets/js/script.js"></script>
+  
+    <!-- 
+      - ionicon link
+    -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
