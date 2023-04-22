@@ -36,7 +36,7 @@
           </li>
 
           <li class="navbar-item">
-            <a href="#" class="navbar-link" data-nav-link>Restaurants</a>
+            <a href="./restaurents.html" class="navbar-link" data-nav-link>Restaurants</a>
           </li>
 
           <li class="navbar-item">
@@ -51,7 +51,7 @@
           <ion-icon name="bag" aria-hidden="true"></ion-icon>
         </button>
 
-        <a href="./Menu.html" class="btn btn-primary has-after">Order Now</a>
+        <a href="./Order.html" class="btn btn-primary has-after">Order Now</a>
       </div>
 
       <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
@@ -70,7 +70,7 @@
     <section class="section top-restaurant" aria-labelledby="top-restaurent-label">
         <div class="container">
 
-          <ul class="grid-list">
+         
 <!-- 
             <li data-reveal="left">
               <h2 class="h2 section-title" id="top-restaurent-label">
@@ -81,38 +81,48 @@
                 "Explore the top 12 restaurants in town, handpicked by our food experts."
               </p>
             </li> -->
-           
-            <li data-reveal="right">
-              <div class="restaurant-card">
+
+              <div style="display: grid; grid-template-columns: auto auto auto auto auto auto auto; align-items: center;" class="restaurant-card">
 
                 <div class="card-icon">
-                  <img src="./assets/images/starbucks.png" width="100" height="100" loading="lazy"
+                  <img src="./assets/images/coffie.jpg" width="100" height="100" loading="lazy"
                     alt="Starbucks" class="w-100">
                 </div>
+                <div>
+                    <h3 class="h5 card-title">Cold Coffee</h3>
 
-                <h3 class="h5 card-title">Starbucks</h3>
-
-                <div class="rating-wrapper">
-                  <ion-icon name="star" aria-hidden="true"></ion-icon>
-                  <ion-icon name="star" aria-hidden="true"></ion-icon>
-                  <ion-icon name="star" aria-hidden="true"></ion-icon>
-                  <ion-icon name="star" aria-hidden="true"></ion-icon>
-                  <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                    <div class="rating-wrapper">
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                    </div>
+                    <p class="card-text">
+                        To inspire and nurture the human spirit – one person, one cup, and one neighborhood at a time
+      
+                      </p>
+    
                 </div>
+               
+               
 
-                <div class="card-meta-wrapper">
-                  <a href="./Menu.html" class="card-meta">Coffee</a>
-                  <a href="#" class="card-meta">Snacks</a>
-                </div>
-
-                <p class="card-text">
-                  To inspire and nurture the human spirit – one person, one cup, and one neighborhood at a time
-
-                </p>
+                
+               
+                    <!-- <a href="#" style="align-items: center; padding: 10px; background-color: orange; ">Add</a> -->
+                    <!-- <a href="#" >Snacks</a> -->
+                    <div class="header-action">
+                        <!-- <button class="cart-btn" aria-label="cart">
+                          <ion-icon name="bag" aria-hidden="true"></ion-icon>
+                        </button> -->
+                
+                        <a onclick="handleAdd()" id="add" href="#" class="btn btn-primary has-after">Add</a>
+                      </div>
+                  
 
               </div>
-            </li>
-
+            
+<!-- 
             <li data-reveal="left">
               <div class="restaurant-card">
 
@@ -200,9 +210,9 @@
                 </p>
 
               </div>
-            </li>
+            </li> -->
 
-          </ul>
+         
 
           <a href="#" class="btn btn-secondary has-after">
             <span class="span">See All</span>
@@ -215,7 +225,7 @@
     </div>
       </article>
       </main>
-    
+   
     <script src="./assets/js/script.js"></script>
   
     <!-- 
@@ -223,5 +233,16 @@
     -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script>
+ function handleAdd() { 
+
+       var name =   document.getElementById("add").innerHTML ;
+       if(name==='Add'){
+        document.getElementById("add").innerHTML ='Added'
+       } else{
+        document.getElementById("add").innerHTML ='Add'
+       }
+      } 
+    </script>
 </body>
 </html>
